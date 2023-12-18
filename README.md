@@ -43,7 +43,7 @@ Take a deep breath! I usually get anxious when I am faced with a big project and
 
 # What I will do differently next time
 While I am proud of myself in terms of time management (believe it or not, I finished this project 2 days before my deadline and I didn't lose any sleep), I wish I made my project more interesting. I feel like I did the bare minimum in order for it to meet the requirements, which is not a bad thing, but this course got me hooked and I have bigger expectations from myself. My plan is to continue developting this game after I present it as my homework, since I discovered a lot of things I can improve while making the final adjustments. Some of the things I wish to add are:
--making the obstacles move horizontally on the matrix for added difficulty
--having a leaderboard with the best 3 highscores instead of 1
+- making the obstacles move horizontally on the matrix for added difficulty
+- having a leaderboard with the best 3 highscores instead of 1
 
 
