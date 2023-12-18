@@ -23,14 +23,14 @@ The game itself is pretty straight forward and it was fun to implement, since it
 
 The menu is what I found to be most difficult to implement. The menu and all the possible settings are displayed on the LCD, so that the game can be played without a laptop, you can just connect it to any power source and play. I used the same function as above for interpreting the joystick movements, and then depending on if I moved left or right, I can navigate through the menu and the selections are made by pressing the joystick button. In order to keep track of what I'm choosing, I made an array for each menu, and used an index to interpret my selections. Using a switch-case structure, I called specific functions, depending on what I selected. 
 With this implementation, here's what I can do:
--Select the difficulty ( from 1 to 3)
--Adjust the LCD brightness - saved to EEPROM
--Adjust the matrix brightness - saved to EEPROM
--Enter your name (max 3 characters)
--Sound ON/OFF 
--Reset the highscore - saved to EEPROM
--Display the "About" section and scroll through the info up and down
--Display the highscore
+- Select the difficulty ( from 1 to 3)
+- Adjust the LCD brightness - saved to EEPROM
+- Adjust the matrix brightness - saved to EEPROM
+- Enter your name (max 3 characters)
+- Sound ON/OFF 
+- Reset the highscore - saved to EEPROM
+- Display the "About" section and scroll through the info up and down
+- Display the highscore
 
 What I found very useful throughout implementing this menu, was using a buttonPressed function that checks if the joystick button was pressed once. You may find it funny (since it's so basic), but writing this function gave me some trouble and mastering it was a very important step, since it was essential for navigating the menu. 
 The loop() function is a switch-case structure that handles the state of the program. I used an enum for the states, consisting of  MainMenu, DifficultySelection, GamePlay, Settings, GameSettings and depending on what the state is, the program enters the specific menu/submenu or it starts the game.
