@@ -6,6 +6,8 @@ Hello adventurer, and welcome to my little project! Embark on a quest unlike any
 
 Okay, now on a more serious note, this little project is my take on creating a fun and challenging game, using an LED Matrix. It sums up most of the things I learned throughout my robotics course, all bundled up in one game that not only should be fun to play, but also intuitive and easy to use. Creating the game itself was only a small part of the challenge, since I had to also take into account the display implementations and overall usability of my project. One of the questions I asked myself while implementing the game was "would a random person know how to use this?" and if the answer was no, that meant I had to redo it.
 
+Here's the video where you can see how my project works: https://youtu.be/hdOedFR4C6c?si=M83fnRHT8P3YjEYe
+
 # Physical components
 I know it looks pretty complicated since there are a lot of wires, but I didn't find a more aesthetically pleasing sollution just yet. Maybe changing the wires to ones that can be shaped and pressed against the breadboard would be a better idea, but I didn't want to risk taking apart my whole project in order to switch the wires, since it had to be ready for presenting and I could not afford a faulty connection before my deadline. However, after I get my grade on it, I would like to change the wires and find a cuter way to display it, but for now the most important part for me was making it actually work. I'll walk you through what the components for this project are and how I connected them all together.
 - Arduino Uno: Self explainitory
