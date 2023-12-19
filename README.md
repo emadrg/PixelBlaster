@@ -23,7 +23,7 @@ I know it looks pretty complicated since there are a lot of wires, but I didn't 
 
   # Circuit diagram
   ![PixelBlaster](https://github.com/emadrg/PixelBlaster/blob/main/circuit_diagram.jpeg)
-Here's the diagram for connecting the matrix to the driver, which is the most time consuming part of the project, also the part where most wires are added and everything becomes pretty crowded. This is helpful since I don't think the picture I took does the setup any justice, so hopefully this makes everything a little bit easyer to understand. Also, it took me forever to create this diagram so please have a look!
+Here's the diagram for connecting the matrix to the driver, which is the most time consuming part of the project, also the part where most wires are added and everything becomes pretty crowded. The matrix is 1088AS and the MAX is the driver. This is helpful since I don't think the picture I took does the setup any justice, so hopefully this makes everything a little bit easyer to understand. Also, it took me forever to create this diagram so please have a look!
 
 # Code
 I tried to keep the code for this project as simple as possible, since I might want to come back to it later in order to add extra stuff, and it would make my job so much easier actually undersatnding what I wrote. I feel like the code splits up into 3 parts: the actual game, the menu and handling the menus in order to have effects on the game (basically putting the two together, usually represented by functions with a name similar to handleCertainMenu()).
