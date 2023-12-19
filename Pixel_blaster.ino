@@ -710,23 +710,11 @@ void initBestHighScore() {
 
 void updateHighScores(const char *playerName, int playerScore) {
   if (playerScore > bestHighScore.score) {
-    // Copy player name into struct
-    strncpy(bestHighScore.name, playerName, sizeof(bestHighScore.name) - 1);
-    bestHighScore.name[sizeof(bestHighScore.name) - 1] = '\0';  // Ensure null-termination
+    strcpy(bestHighScore.name, playerName);
     bestHighScore.score = playerScore;
-
-    // Save name to EEPROM
-    for (int i = 0; i < sizeof(bestHighScore.name); ++i) {
-      EEPROM.update(EEPROM_HIGHSCORE_ADDR + i, bestHighScore.name[i]);
-    }
-
-    // Save score to EEPROM
-    int scoreAddr = EEPROM_HIGHSCORE_ADDR + sizeof(bestHighScore.name);
-    EEPROM.update(scoreAddr, bestHighScore.score & 0xFF);
-    EEPROM.update(scoreAddr + 1, (bestHighScore.score >> 8) & 0xFF);
+    EEPROM.update(EEPROM_HIGHSCORE_ADDR, bestHighScore);
   }
 }
-
 
 
 void displayHighScores() {
